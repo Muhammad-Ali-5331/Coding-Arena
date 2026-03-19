@@ -2,12 +2,12 @@
 // FIREBASE CONFIG — paste your own values from Firebase Console
 // ============================================================
 const FIREBASE_CONFIG = {
-  apiKey:            "PASTE_YOUR_apiKey_HERE",
-  authDomain:        "PASTE_YOUR_authDomain_HERE",
-  projectId:         "PASTE_YOUR_projectId_HERE",
-  storageBucket:     "PASTE_YOUR_storageBucket_HERE",
-  messagingSenderId: "PASTE_YOUR_messagingSenderId_HERE",
-  appId:             "PASTE_YOUR_appId_HERE",
+  apiKey:            "__FIREBASE_API_KEY__",
+  authDomain:        "__FIREBASE_AUTH_DOMAIN__",
+  projectId:         "__FIREBASE_PROJECT_ID__",
+  storageBucket:     "__FIREBASE_STORAGE_BUCKET__",
+  messagingSenderId: "__FIREBASE_MESSAGING_SENDER_ID__",
+  appId:             "__FIREBASE_APP_ID__",
 };
 
 // ── Firebase runtime refs ──
@@ -1029,7 +1029,7 @@ async function judgeSingle(code, lang, inputData, expectedOutput, idx, hidden) {
 //   e.g. "https://yourusername.pythonanywhere.com"
 //   Leave as "" to disable server judging (JS-only mode)
 // ============================================================
-const JUDGE_URL = "";  // ← paste your PythonAnywhere URL here
+const JUDGE_URL = "__JUDGE_URL__"; // ← paste your PythonAnywhere URL here
 
 async function runCode(code, lang, inputData) {
   if (lang === "javascript") {
