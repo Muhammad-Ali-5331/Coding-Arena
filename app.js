@@ -408,7 +408,6 @@ async function switchRole() {
   await enterApp(_currentUser, newRole);
   toast(`Switched to ${newRole} mode`, "ok");
 }
-}
 
 async function logout() {
   if (S.timerInt) clearInterval(S.timerInt);
