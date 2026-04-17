@@ -400,6 +400,13 @@ async function enterApp(user, role) {
 
 async function switchRole() {
   const newRole = _userRole === "host" ? "solver" : "host";
+
+  // Block non-permitted users from becoming host
+  if (newRole === "host" && !ALLOWED_HOST_UIDS.has(_currentUser?.uid)) {
+    toast("Host access is restricted to authorised accounts.", "er");
+    return;
+  }
+
   const confirmed = confirm(
     `Switch to ${newRole.toUpperCase()} mode?\n\n` +
     (newRole === "host"
