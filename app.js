@@ -1,3 +1,9 @@
+// ── Accounts permitted to use Host mode ──
+const ALLOWED_HOST_UIDS = new Set([
+  "i7NvuygvZOYyWcWpSaLm6uiNMzM2",
+   "cvmuwQveDwdeezzeXZsiuhP2Zuk2"
+]);
+
 // ============================================================
 // FIREBASE CONFIG — paste your own values from Firebase Console
 // ============================================================
